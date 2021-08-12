@@ -13,7 +13,7 @@
             <q-card flat style="border-radius: 20px;">
               <q-card-section>
                 <div class="text-h6 text-bbw-blue text-bold">
-                  Escribenos por Whatsapp
+                  Escríbenos por WhatsApp
                 </div>
               </q-card-section>
               <q-separator />
@@ -24,6 +24,7 @@
                   v-model="form.name"
                   :rules="[(val) => !!val || 'Este campo es requerido']"
                   class="q-mb-sm"
+                  color="blue-9"
                 />
                 <q-input
                   label="Apellido"
@@ -31,12 +32,14 @@
                   v-model="form.lastName"
                   :rules="[(val) => !!val || 'Este campo es requerido']"
                   class="q-mb-sm"
+                  color="blue-9"
                 />
                 <q-input
                   label="Correo"
                   filled
                   v-model="form.email"
                   type="email"
+                  color="blue-9"
                   :rules="[
                     (val) => !!val || 'Este campo es requerido',
                     (val) =>
@@ -48,6 +51,7 @@
                   label="Mensaje"
                   filled
                   type="textarea"
+                  color="blue-9"
                   rows="4"
                   v-model="form.message"
                   :rules="[(val) => !!val || 'Este campo es requerido']"
