@@ -125,6 +125,22 @@ export default {
           return "595985755570";
       }
     },
+    returnSheetUrl() {
+      switch (this.$route.params.countryId) {
+        case "pa":
+          return "https://script.google.com/macros/s/AKfycbxKfp3G9IfhQH1plkDDU_hsbN-gWjsUrryrHRWdQv0ga4EJUXDck1gHaFUsqneqEqBB/exec";
+        case "gt":
+          return "https://script.google.com/macros/s/AKfycbzJu1cNmOjQ4DIf07-lzo2A2Pp2404CF8lB6g_02iMhgTioyAVot_bcA3NAkbA5WMEx/exec";
+        case "co":
+          return "https://script.google.com/macros/s/AKfycbz4x4Ceum5YlehVOg5J7u0-N4v6cDLgl4_eQI4oZp5hMdYi7D26hqVD1Ky3TxUBCXgI9g/exec";
+        case "pe":
+          return "https://script.google.com/macros/s/AKfycbxOM-ZCEhJWI3iR6xl4YWO0k0JTH3lpW8eeCi3jS7TMr--UjWBsTc1AFdnpD_fNAfriQQ/exec";
+        case "cr":
+          return "https://script.google.com/macros/s/AKfycby_ZXyiy7zX3ZCWM6B6Vc2MM6_3TgXMOVG-L4t9RWDu2Ko4yyVSWosWRUg6yYtWxKyJvA/exec";
+        case "py":
+          return "https://script.google.com/macros/s/AKfycbxJSD1FyC5l5GDv-t8Xcnl2IJ63tvfRhVWdQZHGpmO4vNaf_tspS0wvoAVuQFtGC1-iTA/exec";
+      }
+    },
     async sendToGoogleSheets() {
       let data = {
         name: this.form.name,
@@ -132,8 +148,7 @@ export default {
         email: this.form.email,
         timestamp: new Date(),
       };
-      var url =
-        "https://script.google.com/macros/s/AKfycbz7eqYhYAG0as0N4_tZ2yOpgLNl3Tp7NKHzGpwqwiK4oUrnnEo2_Eaqn2zgprzoclfA/exec";
+      var url = this.returnSheetUrl();
       var xhr = new XMLHttpRequest();
       xhr.open("POST", url);
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
