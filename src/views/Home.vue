@@ -1,7 +1,9 @@
 <template>
-  <q-page class="bg-grey-3">
-    <div class="gingham-banner bg-blue-4 q-py-lg q-mb-lg text-center">
-      Gingham Banner Here
+  <q-page class="bg-grey-2">
+    <div
+      class="gingham-banner q-mb-lg row items-center justify-center shadow-5"
+    >
+      <BBWTitle />
     </div>
     <div class="row">
       <q-space />
@@ -10,7 +12,9 @@
           <q-form @submit="submitForm()">
             <q-card flat style="border-radius: 20px;">
               <q-card-section>
-                <div class="text-h6">Escribenos por Whatsapp</div>
+                <div class="text-h6 text-bbw-blue text-bold">
+                  Escribenos por Whatsapp
+                </div>
               </q-card-section>
               <q-separator />
               <q-card-section>
@@ -54,15 +58,15 @@
               <q-card-actions align="right" class="q-px-md">
                 <q-btn
                   :disable="loading"
-                  color="blue-4"
+                  color="bbw-pink"
                   rounded
-                  class="q-px-md"
+                  class="q-px-md text-bold"
                   unelevated
                   push
                   type="submit"
                 >
                   <div v-if="!loading">
-                    <q-icon name="fab fa-whatsapp" />
+                    <q-icon name="fab fa-whatsapp" class="q-mr-sm" />
                     Enviar
                   </div>
                   <q-spinner-dots v-else color="white" size="1em" />
@@ -78,6 +82,7 @@
 </template>
 
 <script>
+import BBWTitle from "@/components/BBWTitle";
 export default {
   data() {
     return {
@@ -139,6 +144,9 @@ export default {
       return `*Nombre:* ${this.form.name} ${this.form.lastName}%0D*Correo:* ${this.form.email}%0D%0D*Mensaje:* ${this.form.message}`;
     },
   },
+  components: {
+    BBWTitle,
+  },
 };
 // https://wa.me/50761358727
 // https://wa.me/50246722508
@@ -148,3 +156,23 @@ export default {
 // https://wa.me/595985755570
 // https://script.google.com/macros/s/AKfycbz7eqYhYAG0as0N4_tZ2yOpgLNl3Tp7NKHzGpwqwiK4oUrnnEo2_Eaqn2zgprzoclfA/exec
 </script>
+
+<style scoped>
+.gingham-banner {
+  background-image: url("https://bathbody.vteximg.com.br/arquivos/290620-gingham-pattern.svg");
+}
+
+.text-bbw-blue {
+  color: #005294;
+}
+.bg-bbw-blue {
+  background: #005294;
+}
+
+.text-bbw-pink {
+  color: #ed008e;
+}
+.bg-bbw-pink {
+  background: #ed008e;
+}
+</style>
