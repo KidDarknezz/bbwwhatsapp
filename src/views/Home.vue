@@ -32,6 +32,7 @@
                   label="Correo"
                   filled
                   v-model="form.email"
+                  type="email"
                   :rules="[
                     (val) => !!val || 'Este campo es requerido',
                     (val) =>
@@ -96,6 +97,7 @@ export default {
       await this.sendToGoogleSheets();
       setTimeout(() => {
         window.location.href = `https://wa.me/${this.returnWhatsappNo()}?text=${this.returnFormattedMessage()}`;
+        this.loading = false;
       }, 500);
     },
     returnWhatsappNo() {
