@@ -100,17 +100,17 @@ export default {
     },
     returnWhatsappNo() {
       switch (this.$route.params.countryId) {
-        case "PA":
+        case "pa":
           return "50761358727";
-        case "GT":
+        case "gt":
           return "50246722508";
-        case "CO":
+        case "co":
           return "573222660774";
-        case "PE":
+        case "pe":
           return "51932471962";
-        case "CR":
+        case "cr":
           return "50661815936";
-        case "PY":
+        case "py":
           return "595985755570";
       }
     },
