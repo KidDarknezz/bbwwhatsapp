@@ -130,15 +130,15 @@ export default {
         case "pa":
           return "https://script.google.com/macros/s/AKfycbxKfp3G9IfhQH1plkDDU_hsbN-gWjsUrryrHRWdQv0ga4EJUXDck1gHaFUsqneqEqBB/exec";
         case "gt":
-          return "https://script.google.com/macros/s/AKfycbzJu1cNmOjQ4DIf07-lzo2A2Pp2404CF8lB6g_02iMhgTioyAVot_bcA3NAkbA5WMEx/exec";
+          return "https://script.google.com/macros/s/AKfycbx6SylMkT--ZiM9XMy_zCpq2J3Rz5wU7UDusu_5hZcWbp0Q99Ccu_Q5h13j3lPcgJls/exec";
         case "co":
-          return "https://script.google.com/macros/s/AKfycbz4x4Ceum5YlehVOg5J7u0-N4v6cDLgl4_eQI4oZp5hMdYi7D26hqVD1Ky3TxUBCXgI9g/exec";
+          return "https://script.google.com/macros/s/AKfycbzsz3DO1r80YeJTYCW5H699znS742bUpbeGLjANVsdFB5IwcSlspHt5Das8E0WBVW4HKg/exec";
         case "pe":
-          return "https://script.google.com/macros/s/AKfycbxOM-ZCEhJWI3iR6xl4YWO0k0JTH3lpW8eeCi3jS7TMr--UjWBsTc1AFdnpD_fNAfriQQ/exec";
+          return "https://script.google.com/macros/s/AKfycbzgt7hy9WdFB9srpdejmsNtD2HNgN2OIG5VMuGEHLvjmKRivyRq4jVW_Wd2SEJlckI5Vg/exec";
         case "cr":
-          return "https://script.google.com/macros/s/AKfycby_ZXyiy7zX3ZCWM6B6Vc2MM6_3TgXMOVG-L4t9RWDu2Ko4yyVSWosWRUg6yYtWxKyJvA/exec";
+          return "https://script.google.com/macros/s/AKfycbypMLyOmfzY9RfTSYXLm1F4lZDyIOXIN8GYuv64xAvr8G5fM8HKpPuYThTdOrCFhoOn/exec";
         case "py":
-          return "https://script.google.com/macros/s/AKfycbxJSD1FyC5l5GDv-t8Xcnl2IJ63tvfRhVWdQZHGpmO4vNaf_tspS0wvoAVuQFtGC1-iTA/exec";
+          return "https://script.google.com/macros/s/AKfycbw27P2rRJVEh0xlFJD4CUqtu1to4Hvc-WWhzKiHf7w_62fdaQAOBke1UBfqFZ-cg4eTRA/exec";
       }
     },
     async sendToGoogleSheets() {
@@ -146,7 +146,6 @@ export default {
         name: this.form.name,
         lastName: this.form.lastName,
         email: this.form.email,
-        timestamp: new Date(),
       };
       var url = this.returnSheetUrl();
       var xhr = new XMLHttpRequest();
@@ -167,13 +166,12 @@ export default {
     BBWTitle,
   },
 };
-// https://wa.me/50761358727
-// https://wa.me/50246722508
-// https://wa.me/573222660774
-// https://wa.me/51932471962
-// https://wa.me/50661815936
-// https://wa.me/595985755570
-// https://script.google.com/macros/s/AKfycbz7eqYhYAG0as0N4_tZ2yOpgLNl3Tp7NKHzGpwqwiK4oUrnnEo2_Eaqn2zgprzoclfA/exec
+// PA - https://wa.me/50761358727
+// GT - https://wa.me/50246722508
+// CO - https://wa.me/573222660774
+// PE - https://wa.me/51932471962
+// CR - https://wa.me/50661815936
+// PY - https://wa.me/595985755570
 </script>
 
 <style scoped>
