@@ -105,7 +105,7 @@ export default {
       this.loading = true;
       await this.sendToGoogleSheets();
       setTimeout(() => {
-        window.location.href = `https://wa.me/${this.returnWhatsappNo()}?text=${this.returnFormattedMessage()}`;
+        // window.location.href = `https://wa.me/${this.returnWhatsappNo()}?text=${this.returnFormattedMessage()}`;
         this.loading = false;
       }, 500);
     },
@@ -142,7 +142,7 @@ export default {
         case "py":
           return "https://script.google.com/macros/s/AKfycbw27P2rRJVEh0xlFJD4CUqtu1to4Hvc-WWhzKiHf7w_62fdaQAOBke1UBfqFZ-cg4eTRA/exec";
         case "ec":
-          return "https://script.google.com/macros/s/AKfycbwnBIWAv4ntnH9WhU3EDDxTxF1gCmsMsCuoNLJHR5MoRAaoX0Wu_NfldXZ17BAd948fAA/exec";
+          return "https://script.google.com/macros/s/AKfycbxVCjZoEZRsxoz06CngPVAgCvVdt4E5iw7AF2jx8tTj1oiBPhO7e6QrsxKJxIoJ6h1Ylw/exec";
       }
     },
     async sendToGoogleSheets() {
