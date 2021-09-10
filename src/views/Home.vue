@@ -142,7 +142,7 @@ export default {
         case "py":
           return "https://script.google.com/macros/s/AKfycbw27P2rRJVEh0xlFJD4CUqtu1to4Hvc-WWhzKiHf7w_62fdaQAOBke1UBfqFZ-cg4eTRA/exec";
         case "ec":
-          return "https://script.google.com/macros/s/AKfycbw27P2rRJVEh0xlFJD4CUqtu1to4Hvc-WWhzKiHf7w_62fdaQAOBke1UBfqFZ-cg4eTRA/exec";
+          return "https://script.google.com/macros/s/AKfycbwnBIWAv4ntnH9WhU3EDDxTxF1gCmsMsCuoNLJHR5MoRAaoX0Wu_NfldXZ17BAd948fAA/exec";
       }
     },
     async sendToGoogleSheets() {
