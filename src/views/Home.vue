@@ -105,7 +105,7 @@ export default {
       this.loading = true;
       await this.sendToGoogleSheets();
       setTimeout(() => {
-        // window.location.href = `https://wa.me/${this.returnWhatsappNo()}?text=${this.returnFormattedMessage()}`;
+        window.location.href = `https://wa.me/${this.returnWhatsappNo()}?text=${this.returnFormattedMessage()}`;
         this.loading = false;
       }, 500);
     },
