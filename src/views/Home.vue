@@ -125,6 +125,8 @@ export default {
           return "595985755570";
         case "ec":
           return "593987476184";
+        case "mx":
+          return "50767669078";
       }
     },
     returnSheetUrl() {
@@ -143,6 +145,8 @@ export default {
           return "https://script.google.com/macros/s/AKfycbw27P2rRJVEh0xlFJD4CUqtu1to4Hvc-WWhzKiHf7w_62fdaQAOBke1UBfqFZ-cg4eTRA/exec";
         case "ec":
           return "https://script.google.com/macros/s/AKfycbxVCjZoEZRsxoz06CngPVAgCvVdt4E5iw7AF2jx8tTj1oiBPhO7e6QrsxKJxIoJ6h1Ylw/exec";
+        case "mx":
+          return "https://script.google.com/macros/s/AKfycbwd-1CwVFvva66TP3TgC5VCqO2f9Wnnd2zn4kOVfp5yZSBxQJugjG9PqVT3xqF9f_ANcQ/exec";
       }
     },
     async sendToGoogleSheets() {
