@@ -125,6 +125,8 @@ export default {
           return "595985755570";
         case "ec":
           return "593987476184";
+        case "sv":
+          return "50377556994";
       }
     },
     returnSheetUrl() {
@@ -143,6 +145,8 @@ export default {
           return "https://script.google.com/macros/s/AKfycbw27P2rRJVEh0xlFJD4CUqtu1to4Hvc-WWhzKiHf7w_62fdaQAOBke1UBfqFZ-cg4eTRA/exec";
         case "ec":
           return "https://script.google.com/macros/s/AKfycbxVCjZoEZRsxoz06CngPVAgCvVdt4E5iw7AF2jx8tTj1oiBPhO7e6QrsxKJxIoJ6h1Ylw/exec";
+        case "sv":
+          return "https://script.google.com/macros/s/AKfycbx0bXhO3vpuCkN07Tyro8-5GpakEGRl3WPIUflVqfdLa9Yzq2C8dwp7ZcO7hTvpUFMUBA/exec";
       }
     },
     async sendToGoogleSheets() {
@@ -176,6 +180,7 @@ export default {
 // PE - https://wa.me/51932471962
 // CR - https://wa.me/50661815936
 // PY - https://wa.me/595985755570
+// SV - https://wa.me/50377556994
 </script>
 
 <style scoped>
